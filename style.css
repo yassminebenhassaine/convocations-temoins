@@ -1,0 +1,120 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 { text-align: center; color: #0f4c81; margin-bottom: 4px; }
+.subtitle { text-align: center; color: #6b7280; margin-top: 0; margin-bottom: 24px; }
+
+.form-card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.form-card h2 { color: #0f4c81; font-size: 18px; margin-top: 0; }
+
+label { display: block; margin-top: 14px; margin-bottom: 4px; font-weight: 600; font-size: 14px; }
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+hr { margin: 20px 0; border: none; border-top: 1px solid #e5e7eb; }
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-primary { background: #0f4c81; color: #fff; width: 100%; margin-top: 20px; }
+.btn-secondary { background: #e5e7eb; color: #1f2937; }
+.btn-print { background: #15803d; color: #fff; }
+
+.actions { text-align: center; margin-top: 20px; }
+
+.alert-success {
+    background: #dcfce7;
+    color: #166534;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.empty { text-align: center; color: #6b7280; margin-top: 30px; }
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.result-table th, .result-table td {
+    border: 1px solid #e5e7eb;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.result-table th { background: #0f4c81; color: #fff; }
+
+/* ===== أمر الإحضار - تنسيق الطباعة ===== */
+.order-sheet {
+    max-width: 750px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 50px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    font-family: 'Traditional Arabic', 'Segoe UI', serif;
+}
+
+.order-header { text-align: center; }
+.kingdom { font-weight: bold; font-size: 20px; margin: 0; }
+.ministry { font-size: 16px; margin: 4px 0; }
+.court { font-size: 16px; font-weight: bold; margin: 4px 0; }
+.dossier-line { margin-top: 10px; font-size: 15px; }
+
+.order-title {
+    text-align: center;
+    text-decoration: underline;
+    margin: 30px 0;
+    font-size: 24px;
+}
+
+.order-body p { line-height: 2; font-size: 16px; text-align: justify; margin-bottom: 16px; }
+.highlight { color: #0f4c81; }
+
+.order-footer { margin-top: 50px; }
+.signature { text-align: left; margin-top: 30px; }
+.sign-box { width: 200px; height: 80px; border: 1px dashed #999; margin-top: 10px; }
+
+@media print {
+    .no-print { display: none; }
+    body { background: #fff; padding: 0; }
+    .order-sheet { box-shadow: none; border: none; margin: 0; }
+}
